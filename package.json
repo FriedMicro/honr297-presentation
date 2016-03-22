@@ -1,0 +1,24 @@
+{
+    "name": "Honr297-presentation",
+    "version": "0.1",
+    "description": "Honr297 final project site",
+    "author": "friedmicro",
+    "contributors": [
+        {
+            "name": "EPICmynamesbg"
+        }, {
+            "name": "aidanfeay"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FriedMicro/honr297-presentation.git"
+    },
+    "dependencies": {
+        "gulp": "*",
+        "gulp-sass": "*",
+        "gulp-concat": "*"
+    },
+    "private": true,
+    "license": "MIT"
+}
