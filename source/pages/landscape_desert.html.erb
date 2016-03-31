@@ -3,9 +3,11 @@ title: Desert Landscapes | HONR 297 Project
 ---
 
 <%=partial 'partials/header' %>
+<script>var desertQuiz;</script>
 <div id="content">
   <p>Desert content and quiz goes here</p>
-  <p onclick="var desertQuiz = new Quiz('../javascripts/quizzes/sample.json');">create new quiz</p>
+  <p onclick="desertQuiz = new Quiz('#desertQuiz', '../javascripts/quizzes/sample.json');">create new quiz</p>
+  <div id="desertQuiz" class="quizContainer"></div>
   <%=partial 'partials/lorem' %>
 </div>
 <%=partial 'partials/footer' %>
