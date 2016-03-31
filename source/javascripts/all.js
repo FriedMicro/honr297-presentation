@@ -1,3 +1,5 @@
+//= require_tree .
+
 (function() {
 
   // can put our main quiz methods, etc here
