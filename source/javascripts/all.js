@@ -1,11 +1,18 @@
 //= require_tree .
 
+var Quiz = function (filepath) {
+
+  $.getJSON(filepath, function(response){
+    console.log("loading " + filepath);
+    console.log(JSON.stringify(response));
+   });
+
+};
+
 (function() {
 
-  // can put our main quiz methods, etc here
-
   $(document).ready(function() {
-    console.log('ready');
+    console.log('document ready');
   });
 
 })();
