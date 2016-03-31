@@ -2,7 +2,7 @@
   "title": "Sample Quiz",
   "questions": [
     {
-      "question_name": "What is the capital of Indiana",
+      "question_name": "What is the capital of Indiana?",
       "answers": [
         "Kokomo",
         "Gary",
