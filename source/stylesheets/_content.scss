@@ -1,12 +1,5 @@
 body {
 
-  #splash {
-    text-align: center;
-    a {
-      display: block;
-    }
-  }
-
   #splash,
   #content {
     padding: 40px 0;
@@ -14,12 +7,16 @@ body {
     margin: 0 auto;
   }
 
+  #splash {
+    text-align: center;
+    a {
+      display: block;
+    }
+  }
+
   #content {
-    .quizContainer {
-      display: none;
-      padding: 8px;
-      background-color: #e6e6e6;
-      border-radius: 3px;
+    .copy p {
+      margin: 0 0 1em;
     }
   }
 
