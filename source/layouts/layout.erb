@@ -5,12 +5,13 @@
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title %></title>
 
     <%= stylesheet_link_tag "normalize", "all" %>
+    <link rel=stylesheet href="../javascripts/slick/slick.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="../javascripts/slick/slick.js"></script>
     <%= javascript_include_tag  "all" %>
   </head>
 

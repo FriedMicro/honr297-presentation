@@ -15,31 +15,31 @@ var Quiz = function (container, filepath) {
         self.json = response;
     }
 
-  var loadQuiz = function() {
-    $(self.container).css('display','block');
-    var outputHTML = "";
-    outputHTML += '<h2 class="quizTitle">' + self.json.title + '</h2>';
-    $.each(self.json.questions, function(index, question) {
-      outputHTML += '<div class="questionWrapper" data-qindex="' + index + '">';
-      outputHTML += '<h4 class="quizQuestion">' + question.question_name + '</h4>';
-      $.each(question.answers, function(index, answer) {
-        outputHTML += '<p class="quizAnswer" data-value="' + answer + '">' + (index+1) + ". " + answer + '</p>';
-      });
-      outputHTML += '</div>';
-    });
+    var loadQuiz = function () {
+        $(self.container).css('display', 'block');
+        var outputHTML = "";
+        outputHTML += '<h2 class="quizTitle">' + self.json.title + '</h2>';
+        $.each(self.json.questions, function (index, question) {
+            outputHTML += '<div class="questionWrapper" data-qindex="' + index + '">';
+            outputHTML += '<h4 class="quizQuestion">' + question.question_name + '</h4>';
+            $.each(question.answers, function (index, answer) {
+                outputHTML += '<p class="quizAnswer" data-value="' + answer + '">' + (index + 1) + ". " + answer + '</p>';
+            });
+            outputHTML += '</div>';
+        });
 
-    $(self.container).html(outputHTML);
+        $(self.container).html(outputHTML);
 
-    $('.quizAnswer').click(function() {
-      $(this).siblings().removeClass('correct incorrect');
-      var qindex = $(this).parent('.questionWrapper').data('qindex');
-      if ($(this).data('value') == self.json.questions[qindex].correct_answer) {
-        $(this).addClass('correct');
-      } else {
-        $(this).addClass('incorrect');
-      }
-    });
-  }
+        $('.quizAnswer').click(function () {
+            $(this).siblings().removeClass('correct incorrect');
+            var qindex = $(this).parent('.questionWrapper').data('qindex');
+            if ($(this).data('value') == self.json.questions[qindex].correct_answer) {
+                $(this).addClass('correct');
+            } else {
+                $(this).addClass('incorrect');
+            }
+        });
+    }
 
     var loadQuiz = function () {
         $(self.container).css('display', 'block');
@@ -51,6 +51,7 @@ var Quiz = function (container, filepath) {
 
     $(document).ready(function () {
         console.log('document ready');
+
         $('.navigation').click(function () {
             $('.navigation').addClass('nav-hidden');
             console.log("Hide");
@@ -60,8 +61,29 @@ var Quiz = function (container, filepath) {
             $('.navigation').removeClass('nav-hidden');
             console.log("Show");
         });
+
+//        $('.slick-carousel').slick({
+//            accessibility: false,
+//            adaptiveHeight: false,
+//            autoplay: true,
+//            autoplaySpeed: 5000,
+//            arrows: false,
+//            centerMode: false,
+//            cssEase: true,
+//            dots: false,
+//            draggable: false,
+//            fade: false,
+//            focusOnSelect: false,
+//            infinite: true,
+//            mobileFirst: true,
+//            pauseOnHover: false,
+//            pauseOnDotsHover: true,
+//            responsive: 400,
+//            swipeToSlide: true,
+//            touchMove: true,
+//            variableWidth: false
+//        });
+
     });
-
-
 
 })();
