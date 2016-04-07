@@ -1,33 +1,42 @@
 body {
-
-  #splash,
-  #content {
-    padding: 40px 0;
-    max-width: 670px;
-    margin: 0 auto;
-  }
-
-  #splash {
-    text-align: center;
-    a {
-      display: block;
+    #splash,
+    #content {
+        padding: 40px 0;
+        max-width: 670px;
+        margin: 0 auto;
     }
-  }
-
-  #content {
-    .copy p {
-      margin: 0 0 1em;
+    #splash {
+        text-align: center;
+        a {
+            display: block;
+        }
     }
-  }
-
-  #footer {
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid darken(#e6e6e6, 10%);
-    background-color: #e6e6e6;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-  }
-  
+    #content {
+        .copy p {
+            margin: 0 0 1em;
+        }
+        .button-container {
+            height: 80px;
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            .button {
+                display: block;
+                width: 60%;
+                min-width: 250px;
+                height: 60px;
+                font-weight: 700;
+                color: white;
+                font-size: 1.2em;
+                padding: 5px 7px;
+                background-color: red;
+                text-decoration: none;
+                line-height: 50px;
+                text-align: center;
+                margin: 5px auto;
+            }
+            .button:hover {}
+            .button:active {}
+        }
+    }
 }
