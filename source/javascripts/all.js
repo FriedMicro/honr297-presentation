@@ -15,7 +15,6 @@ var Quiz = function (container, filepath) {
         self.json = response;
     }
 
-<<<<<<< Updated upstream
   var loadQuiz = function() {
     $(self.container).css('display','block');
     var outputHTML = "";
@@ -41,13 +40,11 @@ var Quiz = function (container, filepath) {
       }
     });
   }
-=======
+
     var loadQuiz = function () {
         $(self.container).css('display', 'block');
         $(self.container).html('<p>' + self.json.title + '</p>');
     }
-
->>>>>>> Stashed changes
 };
 
 (function () {
