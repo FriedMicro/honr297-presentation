@@ -62,27 +62,7 @@ var Quiz = function (container, filepath) {
             console.log("Show");
         });
 
-//        $('.slick-carousel').slick({
-//            accessibility: false,
-//            adaptiveHeight: false,
-//            autoplay: true,
-//            autoplaySpeed: 5000,
-//            arrows: false,
-//            centerMode: false,
-//            cssEase: true,
-//            dots: false,
-//            draggable: false,
-//            fade: false,
-//            focusOnSelect: false,
-//            infinite: true,
-//            mobileFirst: true,
-//            pauseOnHover: false,
-//            pauseOnDotsHover: true,
-//            responsive: 400,
-//            swipeToSlide: true,
-//            touchMove: true,
-//            variableWidth: false
-//        });
+//		$('.custom-carousel').
 
     });
 
