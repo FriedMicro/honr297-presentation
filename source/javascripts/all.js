@@ -62,8 +62,6 @@ var Quiz = function (container, filepath) {
             console.log("Show");
         });
 
-//		$('.custom-carousel').
-
     });
 
 })();
