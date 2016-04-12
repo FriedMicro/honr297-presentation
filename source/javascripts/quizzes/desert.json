@@ -1,0 +1,25 @@
+{
+  "title": "Desert Formations",
+  "questions": [
+    {
+      "question_name": "How much precipication is necessary for a region to be considered a desert?",
+      "answers": [
+        "10 inches",
+        "5 inches",
+        "20 inches",
+        "3 inches"
+      ],
+      "correct_answer": "10 inches"
+    },
+    {
+      "question_name": "Of the dune types listed, which is the largest?",
+      "answers": [
+        "Transverse",
+        "Star",
+        "Longitudinal",
+        "Barchan"
+      ],
+      "correct_answer": "Longitudinal"
+    }
+  ]
+}
