@@ -1,0 +1,35 @@
+.quizLoader {
+  color: white;
+  background-color: $color-secondary-1-0;
+  margin: 8px 0;
+  padding: 4px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.quizContainer {
+  display: none;
+  padding: 1em 0;
+  .quizQuestion {
+    margin: 1em 0 0 0;
+    img {
+      width: 100%;
+    }
+  }
+  .quizAnswer {
+    background-color: #e6e6e6;
+    padding: 4px 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    &.selected {
+      background-color: darken(#e6e6e6, 10%);
+    }
+    &.correct {
+      background-color: lighten($color-primary-1, 10%);
+    }
+    &.incorrect {
+      background-color: lighten($color-complement-0, 10%);
+    }
+  }
+}

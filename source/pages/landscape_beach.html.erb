@@ -1,0 +1,24 @@
+---
+title: Beach Landscapes | HONR 297 Project
+---
+
+<%=partial 'partials/header' %>
+<%=partial 'partials/navigation' %>
+<div id="content">
+    <h1>Beaches</h1>
+    <p>Beaches are a coastal landscape sculpted primarily by the forces of water and wind. When talking about beaches, specifically we talk about the shallow water currents and the sand formations.
+    </p>
+    <h2>Tides</h2>
+    <p>The level of water on beaches varies at different points through the day. Most people commonly recognize the pull of the moon as the primary factor of the tides; however, this isn’t always the case. In some locations, the wind has a greater effect on tides. A high breeze off of the ocean will usually give the waves more force, causing it to splash higher on to land. This, coupled with factors like the lunar location and the slope of the beach can determine how high or low the water may reach at any given point in a day.</p>
+    <h2>Currents</h2>
+    <p>Offshore, beaches have water currents, or strong flows of water. Currents usually flow 2 ways: parallel to the beach, or perpendicular. Parallel currents are quite common, and the way that the water will usually flow after washing up onto the sand. However, there are also currents known as Rip Currents.
+    </p>
+    <h3>Rip Currents</h3>
+    <img src="../images/Rip-Current.jpg" />
+    <p>Rip currents flow perpendicular to the beach and against the natural force of the waves. From above, they can be fairly easy to spot as there is usually a flow of water inward on each side at the shore, and then an explosion like shape rushing back out to sea. Rip currents are created when the water flowing onto the beach has no where to escape back to the sea, leading to a pressure build up. Eventually, this pressure bubble ‘pops’ in one spot, and all of the water forces itself through the incoming waves and back out to sea. The speed of these currents is much faster than even Olympic swimmers can swim, meaning they are a danger to beach-goers. However, as a rule of thumb, it is always best to swim parallel to the beach out of the Rib Current before heading back to shore.</p>
+    <div class="button-container">
+        <a onclick="desertQuiz = new Quiz('#desertQuiz', '../javascripts/quizzes/sample.json');" class="button quizLoader">Go To Quiz</a>
+    </div>
+    <div id="beachQuiz" class="quizContainer"></div>
+</div>
+<%=partial 'partials/footer' %>

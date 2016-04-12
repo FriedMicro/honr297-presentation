@@ -1,0 +1,51 @@
+---
+title: Glacial Formations | HONR 297 Project
+---
+
+<%=partial 'partials/header' %>
+<%=partial 'partials/navigation' %>
+<div id="content">
+  <h2>Glacial Formations</h2>
+  <p>Present mostly in polar regions, glaciers cover 10% of the world’s surface. Most are the product of the Quaternary glaciation over the past 100,000 years. They form through a process called nivation where snow remains on the ground year-round and accumulates, compressing past layers into tightly-packed ice. Through variations in the freeze-thaw cycle, glaciers can creep or change form over the course of their existence. Depending on their environment, glaciers can take many forms.</p>
+  <h2>Types of Glaciers</h2>
+  <ul>
+    <li>
+      <h3>Hanging Glaciers</h3>
+      <img style="width: 100%;" src="https://nsidc.org/sites/nsidc.org/files/styles/large/public/images/McDV_FieldPhoto_2000_00869.jpg">
+      <p>Larger glacial systems can experience retreat at various rates. If a lower-elevation glacier retreats to or beneath a glacier that formed later, a hanging glacier is left in its stead.</p>
+    </li>
+    <li>
+      <h3>Arêtes</h3>
+      <img style="width: 100%;" src="http://geotripperimages.com/Erosional_Processes/DSC04493%20Evening%20at%20St%20Mary%20Cpgd.jpg">
+      <p>When two or more glaciers form in close proximity, their creep can erode adjacent mountain faces. If such a face is surrounded on multiple sides by glacial formations, an arête is formed.</p>
+    </li>
+    <li>
+      <h3>Cirques</h3>
+      <img style="width: 100%;" src="http://www.onegeology.org/extra/kids/images/cirque.jpg">
+      <p>Formed in a circular basin as the name suggests, cirques erode the landscape to create a glacial valley and commonly coincide with others to form aretes.</p>
+    </li>
+    <li>
+      <h3>Ice Fields</h3>
+      <img style="width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Southern_Patagonian_Ice_Field.jpg">
+      <p>Wide expanses of permafrost facilitate the development of ice fields, which flow very slowly and cover a large area of flat terrain.</p>
+    </li>
+  </ul>
+
+  <div class="button-container">
+      <a onclick="glacialQuiz = new Quiz('#glacialQuiz', '../javascripts/quizzes/glacial.json'); $(this).remove();" class="button quizLoader">Load Quiz</a>
+  </div>
+  <div id="glacialQuiz" class="quizContainer"></div>
+
+  <hr />
+
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://nsidc.org/cryosphere/glaciers">NSIDC.org</a></li>
+    <li><a href="http://water.usgs.gov/edu/earthglacier.html">USGS.gov</a></li>
+    <li><a href="http://geotripperimages.com/default.htm">GeoTripperImages.com</a></li>
+    <li><a href="http://www.swisseduc.ch/glaciers/glossary/cirque-glacier-en.html">SwissEduc.ch</a></li>
+    <li><a href="http://www.onegeology.org/">OneGeology.org</a></li>
+    <li><a href="https://commons.wikimedia.org/">Wikimedia Commons</a></li>
+  </ul>
+</div>
+<%=partial 'partials/footer' %>

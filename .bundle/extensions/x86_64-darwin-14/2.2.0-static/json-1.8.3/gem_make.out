@@ -1,0 +1,13 @@
+current directory: /Users/aidan/Projects/honr297-presentation/.bundle/gems/json-1.8.3/ext/json
+/Users/aidan/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20160407-29315-d6jqt3.rb extconf.rb
+creating Makefile
+
+current directory: /Users/aidan/Projects/honr297-presentation/.bundle/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/aidan/Projects/honr297-presentation/.bundle/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/aidan/Projects/honr297-presentation/.bundle/gems/json-1.8.3/ext/json
+make "DESTDIR=" install

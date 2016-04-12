@@ -1,0 +1,12 @@
+"clang -o conftest -I/Users/aidan/.rbenv/versions/2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/aidan/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/aidan/.rbenv/versions/2.2.2/include/ruby-2.2.0 -I. -I/usr/local/opt/openssl/include  -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/aidan/.rbenv/versions/2.2.2/lib -L/usr/local/opt/openssl/lib     -lruby-static -framework CoreFoundation  -lpthread -lgmp -ldl -lobjc "
+/Users/aidan/.rbenv/versions/2.2.2/lib/ruby/2.2.0/mkmf.rb:395: warning: Insecure world writable dir /Users/aidan/.rbenv/versions in PATH, mode 040777
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+

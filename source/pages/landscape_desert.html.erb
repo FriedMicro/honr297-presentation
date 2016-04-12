@@ -1,0 +1,14 @@
+---
+title: Desert Landscapes | HONR 297 Project
+---
+
+<%=partial 'partials/header' %>
+<%=partial 'partials/navigation' %>
+<script>var desertQuiz;</script>
+<div id="content">
+  <h1>Desert content and quiz goes here</h1>
+  <p class="quizLoader" onclick="desertQuiz = new Quiz('#desertQuiz', '../javascripts/quizzes/sample.json');">load quiz</p>
+  <div id="desertQuiz" class="quizContainer"></div>
+  <%=partial 'partials/lorem' %>
+</div>
+<%=partial 'partials/footer' %>
