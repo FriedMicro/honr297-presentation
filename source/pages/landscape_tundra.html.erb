@@ -5,7 +5,51 @@ title: Tundra Landscapes | HONR 297 Project
 <%=partial 'partials/header' %>
 <%=partial 'partials/navigation' %>
 <div id="content">
-  <h1>Tundra content and quiz goes here</h1>
-  <%=partial 'partials/lorem' %>
+    <h1>Tundras</h1>
+    <p>Tundra are mostly barren landscapes defined primarily by the permafrost of the ground. Not the top layer of soil, but usually a few feet down through up to 1500 feet, the soil is completely frozen. This is usually because the dry and cold seasons far surpass the warm, melt seasons in the area, meaning only the top few feet of soil may ever get the chance to thaw.</p>
+    <h2>Types</h2>
+    <div class="section">
+        <h3>Arctic</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Tundra_in_Siberia.jpg" />
+        <p>Arctic Tundra appear in the Northern Hemisphere (Canada and Russia/Siberia) and are the most commonly referenced tundra. They have deep permafrost up to around 1500 feet, and are very barren, save a few low lying bushes/shrubs. During the Winter season, the average temperature is usually around -18&#8457;; in contrast, the Summer average is around 54&#8457;, but can easily hover around 3&#8457; in the evenings.</p>
+        <p>On top of the cold temperatures, low rainfall and frequent high wind keep these environments very dry. The average rainfall is 6-10in per year, while the wind gusts between 30 and 60 mph most days. All of this leads to very little thawing except for the top few inches of soil, which will be kind of like a marsh.</p>
+        <p>Most life in the Arctic Tundra are plants, such as small bushes and lichen, but 48 species of mammals live there, including arctic foxes, caribou, rabbits, and oxen.</p>
+    </div>
+    <div class="section">
+        <h3>Antarctic</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Kerguelen_RallierDuBatty.JPG" />
+        <p>Antarctic Tundra appear in the Southern Hemisphere, primarily on the tips of Antarctica and some southern islands. These landscapes are very much like the Arctic Tundra, but have even less vegetation and no native mammal species. The soil also tends to be much rockier, which is where lichen and mosses tend to take root.</p>
+    </div>
+    <div class="section">
+        <h3>Alpine</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Alpine_tundra_Copper_Mountain_Colorado.jpg" />
+        <p>Alpine Tundra are the exception to the permafrost rule as they contain no permafrost. However, they still have no large plant life, if any at all as the soil is largely depleted of all resources. Alpine Tundra appear towards the peak of high mountains, meaning they are cold, windy, and have lower air quality for life in general to flourish.</p>
+    </div>
+    <h2>Tundra and Global Warming</h2>
+    <p>One unique note about frozen Tundra is they contain mass amounts of carbon dioxide. Previously, the Tundra used to be massive carbon sinks, containing around 14% of the Earth’s carbon. However, now that the world is warming, the slow unthawing of some permafrost is allowing the release of this built up carbon, further increasing the effects of Global Warming.</p>
+    <div class="button-container" id="quiz">
+        <a onclick="tundraQuiz = new Quiz('#tundraQuiz', '../javascripts/quizzes/sample.json');" class="button quizLoader">Go To Quiz</a>
+    </div>
+    <div id="tundraQuiz" class="quizContainer"></div>
+    <hr />
+    <h2>Sources</h2>
+    <ul class="source-list">
+        <li>
+           <a href="https://en.wikipedia.org/wiki/Tundra">
+               Wikipedia
+           </a>
+        </li>
+        <li>
+            <a href="http://www.britannica.com/science/alpine-tundra">
+                Britannica.com
+            </a>
+        </li>
+        <li>
+            <a href="http://environment.nationalgeographic.com/environment/habitats/tundra-profile/">
+                National Geographic
+            </a>
+        </li>
+    </ul>
+
 </div>
 <%=partial 'partials/footer' %>

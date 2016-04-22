@@ -1,25 +1,49 @@
-/* line 1, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,700italic,400italic,200,200italic);
+/* line 3, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
 * {
-  font-family: Tahoma, sans-serif;
+  font-family: Raleway, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* line 8, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
+/* line 10, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
 html {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
-/* line 14, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
+/* line 16, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
 body {
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
+  -webkit-overflow: scroll;
+  background-color: #EFEFEF;
   -webkit-overflow-scrolling: touch; }
+
+/* line 25, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+/* line 31, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
+hr {
+  margin: 20px auto; }
+
+/* line 35, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/all.scss */
+.border-bottom {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CCC; }
 
 /* line 1, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
 header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
   display: flex;
   flex-flow: row nowrap;
   position: relative;
@@ -29,14 +53,14 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   align-content: center; }
-  /* line 2, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+  /* line 8, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
   header a {
     text-decoration: none;
     color: #0F2250; }
-  /* line 17, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+  /* line 23, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
   header div {
     height: 100%; }
-  /* line 21, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+  /* line 27, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
   header div.nav-slideout-icon {
     flex-basis: 70px;
     flex-grow: 0;
@@ -44,7 +68,7 @@ header {
     cursor: pointer;
     position: relative;
     padding-left: 10px; }
-    /* line 29, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+    /* line 35, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
     header div.nav-slideout-icon img {
       max-width: 60px;
       max-height: 100%;
@@ -52,7 +76,7 @@ header {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); }
-  /* line 38, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+  /* line 44, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
   header div.site-logo {
     flex-basis: auto;
     flex-grow: 1;
@@ -61,7 +85,7 @@ header {
     margin-right: 10px;
     position: relative;
     align-self: flex-start; }
-    /* line 47, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+    /* line 53, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
     header div.site-logo a {
       text-align: right;
       position: relative;
@@ -69,39 +93,49 @@ header {
       display: inline-block;
       width: auto;
       float: right; }
-      /* line 55, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+      /* line 61, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
       header div.site-logo a h1 {
         vertical-align: top;
         display: inline-block;
         margin-right: 20px;
         line-height: 70px; }
-      /* line 61, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+      /* line 67, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
       header div.site-logo a img {
         display: inline-block;
         max-width: 60px;
         max-height: 100%;
         margin-top: 5px; }
 
+/* line 77, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_header.scss */
+.header-spacer {
+  height: 70px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block; }
+
 /* line 1, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
 .carousel-area {
+  margin-top: 70px;
   height: 500px;
   width: 100%;
   position: relative;
   background: linear-gradient(0deg, #3D5285, #0F2250); }
 
-/* line 8, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
+/* line 9, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
 .slider {
   width: 75%;
   margin: 0px auto;
   display: block;
   position: relative;
   height: 100%; }
-  /* line 14, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
+  /* line 15, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
   .slider .item {
     position: absolute;
     width: 100%;
     height: 100%; }
-    /* line 18, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
+    /* line 19, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
     .slider .item img {
       max-width: 100%;
       max-height: 100%;
@@ -111,7 +145,7 @@ header {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-    /* line 28, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
+    /* line 29, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
     .slider .item p {
       position: absolute;
       bottom: 40px;
@@ -122,12 +156,12 @@ header {
       z-index: 1; }
 
 @media screen and (min-width: 1600px) {
-  /* line 41, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
+  /* line 42, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
   .carousel-area {
     height: 700px; } }
 
 @media screen and (max-width: 600px) {
-  /* line 47, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
+  /* line 48, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_mainPage.scss */
   .carousel-area {
     height: 300px; } }
 
@@ -141,32 +175,60 @@ footer {
   position: relative;
   bottom: 0; }
 
-/* line 3, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
-body #splash,
+/* line 2, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
 body #content {
   padding: 40px 0;
   max-width: 670px;
-  margin: 0 auto; }
+  margin: 70px auto 0px auto; }
 
 /* line 8, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
-body #splash {
+body #content h1 {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2.0em;
+  letter-spacing: 0.1em;
+  padding: 15px;
   text-align: center; }
-  /* line 10, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
-  body #splash a {
-    display: block; }
 
-/* line 15, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+/* line 16, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+body #content h2 {
+  margin: 10px auto 10px 10px;
+  padding: 20px auto;
+  font-weight: 200; }
+
+/* line 21, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+body #content .section {
+  width: 90%;
+  position: relative;
+  margin: 20px auto;
+  padding: 15px;
+  border-bottom: 1px solid #CCC; }
+  /* line 27, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  body #content .section h3 {
+    font-weight: 700;
+    margin-left: 20px; }
+  /* line 31, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  body #content .section img {
+    max-width: 100%;
+    text-align: center;
+    margin: 5px auto; }
+  /* line 36, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  body #content .section p {
+    text-indent: 20px;
+    font-weight: 400; }
+
+/* line 41, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
 body #content .copy p {
   margin: 0 0 1em; }
 
-/* line 18, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+/* line 44, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
 body #content .button-container {
   height: 90px;
   display: block;
   width: 100%;
   margin: 5px auto;
   position: relative; }
-  /* line 24, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  /* line 50, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
   body #content .button-container .button {
     position: absolute;
     left: 50%;
@@ -188,19 +250,27 @@ body #content .button-container {
     transition: 0.2s ease;
     box-sizing: content-box;
     border-radius: 3px; }
-  /* line 46, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  /* line 72, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
   body #content .button-container .button:hover {
     background-color: #cac937;
     padding: 7px 9px;
     font-size: 1.3em; }
-  /* line 51, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  /* line 77, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
   body #content .button-container .button:active {
     background-color: #7b7a20;
     padding: 6px 8px;
     font-size: 1.25em; }
-  /* line 56, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  /* line 82, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
   body #content .button-container .button:focus {
     outline: none; }
+
+/* line 86, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+body #content .source-list {
+  list-style: none;
+  margin-top: 20px; }
+  /* line 89, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_content.scss */
+  body #content .source-list li {
+    margin: 10px auto; }
 
 /* line 1, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
 .quizLoader {
@@ -219,19 +289,22 @@ body #content .button-container {
   /* line 14, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
   .quizContainer .quizQuestion {
     margin: 1em 0 0 0; }
-  /* line 17, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
+    /* line 16, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
+    .quizContainer .quizQuestion img {
+      width: 100%; }
+  /* line 20, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
   .quizContainer .quizAnswer {
     background-color: #e6e6e6;
     padding: 4px 8px;
     margin: 4px 0;
     cursor: pointer; }
-    /* line 22, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
+    /* line 25, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
     .quizContainer .quizAnswer.selected {
       background-color: #cdcdcd; }
-    /* line 25, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
+    /* line 28, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
     .quizContainer .quizAnswer.correct {
       background-color: #c1e7c1; }
-    /* line 28, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
+    /* line 31, /Volumes/Hitachi HDD/Documents/Dropbox/Classes/6 Spring 2016/HONR297/honr297-presentation/source/stylesheets/_quiz.scss */
     .quizContainer .quizAnswer.incorrect {
       background-color: #d27676; }
 

@@ -6,51 +6,46 @@ title: Desert Landscapes | HONR 297 Project
 <%=partial 'partials/navigation' %>
 <script>var desertQuiz;</script>
 <div id="content">
-  <h2>Desert Formation</h2>
+  <h1>Desert Formation</h1>
   <p>A region can be classified as a desert if it receives less than 10 inches of rain per year. Deserts typically form in subtropical belts where the climate is much drier than that of the above or below area. Polar regions are also quite dry, but their landscape is discussed on the glacial formations page. Contrary to what one might believe, wind patterns are a less significant shaping force than water in deserts.</p>
   <h2>Kinds of Deserts</h2>
-  <ul>
-    <li>
-      <h3>Alluvial Fans</h3>
-      <img style="width: 100%;" src="http://pages.uoregon.edu/millerm/Dep-03.jpeg">
-      <p>Alluvial fans are delta-like sediment deposits without water. They are often the location at which above-ground streams submerge.</p>
-    </li>
-    <li>
-      <h3>Playas</h3>
+    <div class="section">
+        <h3>Alluvial Fans</h3>
+        <img style="width: 100%;" src="http://pages.uoregon.edu/millerm/Dep-03.jpeg">
+        <p>Alluvial fans are delta-like sediment deposits without water. They are often the location at which above-ground streams submerge.</p>
+    </div>
+    <div class="section">
+        <h3>Playas</h3>
       <img style="width: 100%;" src="http://marlimillerphoto.com/images/Dep-18.jpg">
       <p>Playas are like lakes without an outlet. They collect rainwater until it evaporates or soaks into the water table. Most playas are dry at any given moment, as with salt flats.</p>
-    </li>
-    <li>
-      <h3>Badlands</h3>
+    </div>
+    <div class="section">
+        <h3>Badlands</h3>
       <img style="width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Badlands_at_the_Blue_Gate,_Utah.JPG">
       <p>Badlands are composed of shale bedrock and can be difficult to traverse. The lack of humidity prevents slope gradation, allowing the formation of sharp ridges and steep faces.</p>
-    </li>
-  </ul>
+    </div>
   <h2>Kinds of Dunes</h2>
-  <ul>
-    <li>
-      <h3>Transverse</h3>
+    <div class="section">
+        <h3>Transverse</h3>
       <img style="width: 100%;" src="http://www.comphys.ethz.ch/hans/barchanoide.jpg">
       <p>Transverse dunes are large ripples that occur perpendicular to the wind.</p>
-    </li>
-    <li>
-      <h3>Barchan</h3>
+    </div>
+    <div class="section">
+        <h3>Barchan</h3>
       <img style="width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Mesquite_Sand_Dunes.JPG">
       <p>Barchans develop where sand is not plentiful. Small pocket dunes form perpendicular to the wind in the shape of a small horseshoe.</p>
-    </li>
-    <li>
-      <h3>Star</h3>
+    </div>
+    <div class="section">
+        <h3>Star</h3>
       <img style="width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star-dune.jpg">
       <p>Star dunes are massive, sometimes miles across. Contrary to barchans, they develop in areas with much sand accumulation. Wind blowing from multiple directions over the course of different seasons creates a central peak and several radiating crests.</p>
-    </li>
-    <li>
-      <h3>Longitudinal</h3>
+    </div>
+     <div class="section">
+         <h3>Longitudinal</h3>
       <img style="width: 100%;" src="http://edu.environmentalatlas.ae/tutorials_en/Sand%20Dunes//2nd%20before%20CRESENTIC.jpg">
       <p>Longitudinal dunes are veritable mountains of sand. They can stretch for many miles, forming ridges parallel to the wind. Longitudinal dunes are so large that transverse dunes can form atop them.</p>
-    </li>
-  </ul>
-
-  <div class="button-container">
+     </div>
+  <div class="button-container" id="quiz">
       <a onclick="desertQuiz = new Quiz('#desertQuiz', '../javascripts/quizzes/desert.json'); $(this).remove();" class="button quizLoader">Load Quiz</a>
   </div>
   <div id="desertQuiz" class="quizContainer"></div>
@@ -58,7 +53,7 @@ title: Desert Landscapes | HONR 297 Project
   <hr />
 
   <h2>Sources</h2>
-  <ul>
+  <ul class="source-list">
     <li><a href="http://pubs.usgs.gov/gip/deserts/dunes/">USGS.gov</a></li>
     <li><a href="http://education.nationalgeographic.org/encyclopedia/dune/">NationalGeographic.org</a></li>
     <li><a href="http://www.defenders.org/desert/basic-facts">Defenders.org</a></li>

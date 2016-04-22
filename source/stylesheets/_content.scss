@@ -1,17 +1,43 @@
 body {
-    #splash,
     #content {
         padding: 40px 0;
         max-width: 670px;
-        margin: 0 auto;
-    }
-    #splash {
-        text-align: center;
-        a {
-            display: block;
-        }
+        margin: 70px auto 0px auto;
     }
     #content {
+        h1 {
+            font-weight: 200;
+            font-style: italic;
+            font-size: 2.0em;
+            letter-spacing: 0.1em;
+            padding: 15px;
+            text-align: center;
+        }
+        h2 {
+            margin: 10px auto 10px 10px;
+            padding: 20px auto;
+            font-weight: 200;
+        }
+        .section {
+            width: 90%;
+            position: relative;
+            margin: 20px auto;
+            padding: 15px;
+            border-bottom: 1px solid #CCC;
+            h3 {
+                font-weight: 700;
+                margin-left: 20px;
+            }
+            img {
+                max-width: 100%;
+                text-align: center;
+                margin: 5px auto;
+            }
+            p {
+                text-indent: 20px;
+                font-weight: 400;
+            }
+        }
         .copy p {
             margin: 0 0 1em;
         }
@@ -55,6 +81,13 @@ body {
             }
             .button:focus {
                 outline: none;
+            }
+        }
+        .source-list {
+            list-style: none;
+            margin-top: 20px;
+            li {
+                margin: 10px auto;
             }
         }
     }

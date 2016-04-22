@@ -5,7 +5,43 @@ title: Karst Landscapes | HONR 297 Project
 <%=partial 'partials/header' %>
 <%=partial 'partials/navigation' %>
 <div id="content">
-  <h1>Karst content and quiz goes here</h1>
-  <%=partial 'partials/lorem' %>
+    <h1>Karst</h1>
+    <p>Content...</p>
+    <h2>STUFF</h2>
+    <p>CONTENT
+    </p>
+    <div class="section">
+        <h3>H3</h3>
+        <img src="http://gazaa.gccaz.edu/hazardcity/Files/modules/shoreline/FG11_03.jpg" />
+        <p>Random CONTENT</p>
+    </div>
+    <div class="section">
+        <h3>H3</h3>
+        <img src="http://gazaa.gccaz.edu/hazardcity/Files/modules/shoreline/FG11_03.jpg" />
+        <p>Random CONTENT</p>
+    </div>
+    <h2>STUFF</h2>
+    <img src="http://gazaa.gccaz.edu/hazardcity/Files/modules/shoreline/FG11_03.jpg" />
+    <p>CONTENT
+    </p>
+    <div class="button-container" id="quiz">
+        <a onclick="desertQuiz = new Quiz('#desertQuiz', '../javascripts/quizzes/sample.json');" class="button quizLoader">Go To Quiz</a>
+    </div>
+    <div id="beachQuiz" class="quizContainer"></div>
+    <hr />
+    <h2>Sources</h2>
+    <ul class="source-list">
+        <li>
+           <a href="https://caseagrant.ucsd.edu/news/3-myths-about-rip-currents">
+               caseagrant.ucsd.edu
+           </a>
+        </li>
+        <li>
+            <a href="http://www.britannica.com/science/coastal-landform">
+                Britannica.com
+            </a>
+        </li>
+    </ul>
+
 </div>
 <%=partial 'partials/footer' %>
