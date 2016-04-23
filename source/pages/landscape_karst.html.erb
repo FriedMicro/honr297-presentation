@@ -4,6 +4,7 @@ title: Karst Landscapes | HONR 297 Project
 
 <%=partial 'partials/header' %>
 <%=partial 'partials/navigation' %>
+<script>var karstQuiz;</script>
 <div id="content">
     <h1>Karst</h1>
     <p>Content...</p>
@@ -25,9 +26,9 @@ title: Karst Landscapes | HONR 297 Project
     <p>CONTENT
     </p>
     <div class="button-container" id="quiz">
-        <a onclick="desertQuiz = new Quiz('#desertQuiz', '../javascripts/quizzes/sample.json');" class="button quizLoader">Go To Quiz</a>
+        <a onclick="karstQuiz = new Quiz('#karstQuiz', '../javascripts/quizzes/sample.json');" class="button quizLoader">Open Quiz</a>
     </div>
-    <div id="beachQuiz" class="quizContainer"></div>
+    <div id="karstQuiz" class="quizContainer"></div>
     <hr />
     <h2>Sources</h2>
     <ul class="source-list">

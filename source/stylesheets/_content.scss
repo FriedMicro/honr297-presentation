@@ -90,5 +90,26 @@ body {
                 margin: 10px auto;
             }
         }
+        .questionWrapper {
+            margin: 20px auto;
+            padding: 10px;
+            h4 {
+                img {
+                    margin-top: 10px;
+                }
+            }
+            .quizAnswer:hover {
+                background-color: lighten(#e6e6e6, 10%);
+            }
+            .quizAnswer:active {
+                background-color: darken(#e6e6e6, 10%);
+            }
+            .incorrect:hover {
+                background-color: #d27676;
+            }
+            .correct:hover {
+                background-color: #c1e7c1;
+            }
+        }
     }
 }

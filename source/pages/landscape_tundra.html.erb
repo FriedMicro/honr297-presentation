@@ -4,6 +4,7 @@ title: Tundra Landscapes | HONR 297 Project
 
 <%=partial 'partials/header' %>
 <%=partial 'partials/navigation' %>
+<script>var tundraQuiz;</script>
 <div id="content">
     <h1>Tundras</h1>
     <p>Tundra are mostly barren landscapes defined primarily by the permafrost of the ground. Not the top layer of soil, but usually a few feet down through up to 1500 feet, the soil is completely frozen. This is usually because the dry and cold seasons far surpass the warm, melt seasons in the area, meaning only the top few feet of soil may ever get the chance to thaw.</p>
@@ -28,7 +29,7 @@ title: Tundra Landscapes | HONR 297 Project
     <h2>Tundra and Global Warming</h2>
     <p>One unique note about frozen Tundra is they contain mass amounts of carbon dioxide. Previously, the Tundra used to be massive carbon sinks, containing around 14% of the Earth’s carbon. However, now that the world is warming, the slow unthawing of some permafrost is allowing the release of this built up carbon, further increasing the effects of Global Warming.</p>
     <div class="button-container" id="quiz">
-        <a onclick="tundraQuiz = new Quiz('#tundraQuiz', '../javascripts/quizzes/sample.json');" class="button quizLoader">Go To Quiz</a>
+        <a onclick="tundraQuiz = new Quiz('#tundraQuiz', '../javascripts/quizzes/tundra.json');" class="button quizLoader">Open Quiz</a>
     </div>
     <div id="tundraQuiz" class="quizContainer"></div>
     <hr />
