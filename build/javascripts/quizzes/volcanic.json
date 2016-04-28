@@ -1,0 +1,32 @@
+{
+  "title": "Volcanic Landscapes",
+  "questions": [
+    {
+      "question_name": "Which of these are not a type of volcano?",
+      "answers": [
+        "Shield",
+        "Lava dome",
+        "Cinder cone",
+        "Lava flow"
+      ],
+      "correct_answer": "Lava flow"
+    },
+    {
+      "question_name": "Lava tubes form when?<img style='width: 100%;' src='http://volcano.oregonstate.edu/vwdocs/volc_images/north_america/devils.jpg'>",
+      "answers": [
+        "The roof cools",
+        "A composite volcano erupts",
+        "Manmade chemicals are present"
+      ],
+      "correct_answer": "The roof cools"
+    },
+    {
+      "question_name": "Composite Volcanoes tend have explosive eruptions?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correct_answer": "True"
+    }
+  ]
+}
