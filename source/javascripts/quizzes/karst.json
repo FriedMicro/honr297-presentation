@@ -2,34 +2,28 @@
   "title": "Karst Lanscapes",
   "questions": [
     {
-      "question_name": "In this image, which direction is the wind coming from? <img style='width: 100%;' src='https://upload.wikimedia.org/wikipedia/commons/6/67/Sand_Dunes_-_Wreck_Beach_-_South_Australia.jpg'>",
+      "question_name": "Karst lanscapes only form where limestone is present?",
       "answers": [
-        "Left",
-        "Top",
-        "Right",
-        "Bottom"
+        "True",
+        "False"
       ],
-      "correct_answer": "Left"
+      "correct_answer": "False"
     },
     {
-      "question_name": "What kind of currents can be found in this image? <img style='width: 100%;' src='http://www.scienceofthesurf.com/assets/img_rip/ShellyBeach4.jpg'>",
+      "question_name": "Sinkholes are uncommon in a karst landscape?",
       "answers": [
-        "Longshore",
-        "Deep Sea",
-        "Parallel",
-        "Rip"
+        "True",
+        "False"
       ],
-      "correct_answer": "Rip"
+      "correct_answer": "False"
     },
     {
-      "question_name": "What current type is found here? <img style='width: 100%;' src='http://shorelinefeaturesproject.weebly.com/uploads/1/6/6/2/16627030/5112145.jpg?420'>",
+      "question_name": "Karst lanscapes are more vulnerable to polution than other landscapes?",
       "answers": [
-        "Longshore",
-        "Deep Sea",
-        "Parallel",
-        "Rip"
+        "True",
+        "False"
       ],
-      "correct_answer": "Longshore"
+      "correct_answer": "True"
     }
   ]
 }

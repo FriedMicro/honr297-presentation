@@ -2,34 +2,31 @@
   "title": "Volcanic Landscapes",
   "questions": [
     {
-      "question_name": "In this image, which direction is the wind coming from? <img style='width: 100%;' src='https://upload.wikimedia.org/wikipedia/commons/6/67/Sand_Dunes_-_Wreck_Beach_-_South_Australia.jpg'>",
+      "question_name": "Which of these are not a type of volcano?",
       "answers": [
-        "Left",
-        "Top",
-        "Right",
-        "Bottom"
+        "Shield",
+        "Lava dome",
+        "Cinder cone",
+        "Lava flow"
       ],
-      "correct_answer": "Left"
+      "correct_answer": "Lava flow"
     },
     {
-      "question_name": "What kind of currents can be found in this image? <img style='width: 100%;' src='http://www.scienceofthesurf.com/assets/img_rip/ShellyBeach4.jpg'>",
+      "question_name": "Lava tubes form when?<img style='width: 100%;' src='http://volcano.oregonstate.edu/vwdocs/volc_images/north_america/devils.jpg'>",
       "answers": [
-        "Longshore",
-        "Deep Sea",
-        "Parallel",
-        "Rip"
+        "The roof cools",
+        "A composite volcano erupts",
+        "Manmade chemicals are present"
       ],
-      "correct_answer": "Rip"
+      "correct_answer": "The roof cools"
     },
     {
-      "question_name": "What current type is found here? <img style='width: 100%;' src='http://shorelinefeaturesproject.weebly.com/uploads/1/6/6/2/16627030/5112145.jpg?420'>",
+      "question_name": "Composite Volcanoes tend have explosive eruptions?",
       "answers": [
-        "Longshore",
-        "Deep Sea",
-        "Parallel",
-        "Rip"
+        "True",
+        "False"
       ],
-      "correct_answer": "Longshore"
+      "correct_answer": "True"
     }
   ]
 }
