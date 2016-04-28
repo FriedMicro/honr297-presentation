@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Beach Landscapes | HONR 297 Project</title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="pages pages_landscape_beach">
+    <header>
+    <div class="nav-slideout-icon">
+        <img alt="hamburger-menu" src="../images/hamburger-menu.png" />
+    </div>
+    <div class="site-logo">
+        <a href="/index.html">
+            <h1>Geo Explorer</h1>
+            <img alt="icon" src="../images/icon_512.png"/>
+        </a>
+    </div>
+</header>
+<div class="header-spacer"></div>
+<div class="navigation nav-hidden">
+    <div class="header">
+        <h2 class="title">Geo Explorer</h2>
+        <a class="close-nav">
+            <img src="../images/back-arrow.png"/>
+        </a>
+    </div>
+    <div class="landscapes sub-nav-block">
+        <h3 class="title">Landscapes</h3>
+        <a href="../pages/landscape_beach.html">Beach Landscape</a>
+        <a href="../pages/landscape_desert.html">Desert Landscape</a>
+        <a href="../pages/landscape_glacial.html">Glacial Landscape</a>
+        <a href="../pages/landscape_karst.html">Karst Landscape</a>
+        <a href="../pages/landscape_tundra.html">Tundra Landscape</a>
+        <a href="../pages/landscape_volcanic.html">Volcanic Landscape</a>
+    </div>
+<!--
+    <div class="features sub-nav-block">
+        <h3 class="title">Land Features</h3>
+        <a>Caves</a>
+        <a>Mountains</a>
+        <a>Reefs</a>
+        <a>River Bends</a>
+    </div>
+-->
+    <div class="quizes sub-nav-block">
+        <h3 class="title">Interactive Quizes</h3>
+        <a href="../pages/landscape_beach.html#quiz">Beaches</a>
+        <a href="../pages/landscape_desert.html#quiz">Deserts</a>
+        <a href="../pages/landscape_glacial.html#quiz">Glacial Areas</a>
+        <a href="../pages/landscape_karst.html#quiz">Karst</a>
+        <a href="../pages/landscape_tundra.html#quiz">Tundras</a>
+        <a href="../pages/landscape_volcanic.html#quiz">Volcanos</a>
+    </div>
+</div>
+<script>var beachQuiz;</script>
+<div id="content">
+    <h1>Beaches</h1>
+    <p>Beaches are a coastal landscape sculpted primarily by the forces of water and wind. They may consist of sand, rock, and/or mud, and beaches are particularly vulnerable to change because of their loose sediments and high erosion forces. When talking about beaches, specifically we talk about the shallow water currents and the sand formations.</p>
+    <h2>Tides</h2>
+    <img src="http://files.differencebetween.com/wp-content/uploads/2014/12/Tides_Difference-Between-Tides-and-Waves.jpg" />
+    <p class="border-bottom">The level of water on beaches varies at different points through the day. Most people commonly recognize the pull of the moon as the primary factor of the tides; however, this isn’t always the case. In some locations, the wind has a greater effect on tides. A high breeze off of the ocean will usually give the waves more force, causing it to splash higher on to land. This, coupled with factors like the lunar location and the slope of the beach can determine how high or low the water may reach at any given point in a day.</p>
+    <h2>Currents</h2>
+    <p>Offshore, beaches have water currents, or strong flows of water. Currents usually flow 2 ways: parallel to the beach, or perpendicular. Parallel currents are quite common, and the way that the water will usually flow after washing up onto the sand. However, there are also currents known as Rip Currents.
+    </p>
+    <div class="section">
+        <h3>Longshore Currents</h3>
+        <img src="http://gazaa.gccaz.edu/hazardcity/Files/modules/shoreline/FG11_03.jpg" />
+        <p>Longshore Currents are the gentle current the run nearly parallel to the beach. This happens because as the water comes into the shallows, it is usually at an acute angle to the beach. However, once the water hits shallow water, it begins to refract, going somewhat against the incoming flow. This causes the water to gently push sideways (parallel) to the shoreline. While the force of this flow depends on the force of incoming waves, on an average day, it is usually 10-30 cm/s.</p>
+    </div>
+    <div class="section">
+        <h3>Rip Currents</h3>
+        <img src="../images/Rip-Current.jpg" />
+        <p>Rip currents flow perpendicular to the beach and against the natural force of the waves. From above, they can be fairly easy to spot as there is usually a flow of water inward on each side at the shore, and then an explosion like shape rushing back out to sea. Rip currents are created when the water flowing onto the beach has no where to escape back to the sea, leading to a pressure build up. Eventually, this pressure bubble ‘pops’ in one spot, and all of the water forces itself through the incoming waves and back out to sea. The speed of these currents is much faster than even Olympic swimmers can swim, meaning they are a danger to beach-goers. However, as a rule of thumb, it is always best to swim parallel to the beach out of the Rip Current before heading back to shore.</p>
+    </div>
+    <h2>Dunes</h2>
+    <img src="http://www.s-cool.co.uk/assets/learn_its/alevel/geography/coastal-processes/coastal-deposition/2007-10-22_144124.gif" />
+    <p>Further up the beach, untouchable by the ebb and flow of waves are usually sand dunes. These dunes run parallel at the back of the beach because they are created by the sediments that try to escape the beach. As wind from the sea blows towards land, it picks up little sediments. These sediments will keep going until they get caught on something (the dunes). This means that the side nearest the water will be steeper as sediment hits it and sticks or falls to the base. On the far side, away from the water, the dunes will be very gradual as the wind picks up the sediments on the top of the dune and rolls them gently downwards as far as it can. This sequence of events also means that if a dune is able to keep growing, it slowly grows closer to the water.</p>
+    <div class="button-container" id="quiz">
+        <a onclick="beachQuiz = new Quiz('#beachQuiz', '../javascripts/quizzes/beach.json');" class="button quizLoader">Open Quiz</a>
+    </div>
+    <div id="beachQuiz" class="quizContainer"></div>
+    <hr />
+    <h2>Sources</h2>
+    <ul class="source-list">
+        <li>
+           <a href="https://caseagrant.ucsd.edu/news/3-myths-about-rip-currents">
+               caseagrant.ucsd.edu
+           </a>
+        </li>
+        <li>
+            <a href="http://www.britannica.com/science/coastal-landform">
+                Britannica.com
+            </a>
+        </li>
+    </ul>
+
+</div>
+<footer>
+  <p>Created and Designed by Aidan Feay, Brandon Groff, and Lucas Smith</p>
+</footer>
+  </body>
+</html>

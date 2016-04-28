@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title></title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="pages pages_landscape_volcanic">
+    --- title: Volcanic Landscapes | HONR 297 Project ---
+
+<header>
+    <div class="nav-slideout-icon">
+        <img alt="hamburger-menu" src="../images/hamburger-menu.png" />
+    </div>
+    <div class="site-logo">
+        <a href="/index.html">
+            <h1>Geo Explorer</h1>
+            <img alt="icon" src="../images/icon_512.png"/>
+        </a>
+    </div>
+</header>
+<div class="header-spacer"></div>
+<div class="navigation nav-hidden">
+    <div class="header">
+        <h2 class="title">Geo Explorer</h2>
+        <a class="close-nav">
+            <img src="../images/back-arrow.png"/>
+        </a>
+    </div>
+    <div class="landscapes sub-nav-block">
+        <h3 class="title">Landscapes</h3>
+        <a href="../pages/landscape_beach.html">Beach Landscape</a>
+        <a href="../pages/landscape_desert.html">Desert Landscape</a>
+        <a href="../pages/landscape_glacial.html">Glacial Landscape</a>
+        <a href="../pages/landscape_karst.html">Karst Landscape</a>
+        <a href="../pages/landscape_tundra.html">Tundra Landscape</a>
+        <a href="../pages/landscape_volcanic.html">Volcanic Landscape</a>
+    </div>
+<!--
+    <div class="features sub-nav-block">
+        <h3 class="title">Land Features</h3>
+        <a>Caves</a>
+        <a>Mountains</a>
+        <a>Reefs</a>
+        <a>River Bends</a>
+    </div>
+-->
+    <div class="quizes sub-nav-block">
+        <h3 class="title">Interactive Quizes</h3>
+        <a href="../pages/landscape_beach.html#quiz">Beaches</a>
+        <a href="../pages/landscape_desert.html#quiz">Deserts</a>
+        <a href="../pages/landscape_glacial.html#quiz">Glacial Areas</a>
+        <a href="../pages/landscape_karst.html#quiz">Karst</a>
+        <a href="../pages/landscape_tundra.html#quiz">Tundras</a>
+        <a href="../pages/landscape_volcanic.html#quiz">Volcanos</a>
+    </div>
+</div>
+<script>
+  var volcanoQuiz;
+</script>
+<div id="content">
+  <h1>Volcanic</h1>
+  <div class="section">
+    <h3>Formation</h3>
+    <img src="http://mrkingsciencestudentbuiltsites.weebly.com/uploads/2/5/4/2/25420560/4574625_orig.jpg"/>
+    <p>
+      A volcanic landscape as the name implies is formed as a result of volcanic activities in the area. This does not necessarily imply that there is an actual volcano in the area rather there is merely tectonic activity, which results in the flow of
+      lava. The result of these are lava tubes and volcanoes.</p>
+  </div>
+  <div class="section">
+    <h3>Lava Tubes</h3>
+    <img src="http://lh4.ggpht.com/-STAn4owL3hc/T4PqU15xWtI/AAAAAAAAWRc/JDS8mbBagRQ/hawaii-volcanoes-park-6%25255B2%25255D.jpg?imgmax=800"/>
+    <p>
+      Lava tubes form when small sections of lava flow develop a roof and as a result will flow through in a manner similar to pipes. This frequently occurs during pahoehoe eruptions. In the case of pahoehoe eruptions it is actually a lava flow which is
+      different from the traditional volcanic eruptions we come to think about.
+    </p>
+  </div>
+  <div class="section">
+    <h2>Volcanoes</h2>
+    <img src="http://media.digitalcameraworld.com/wp-content/uploads/sites/123/2012/07/Bruce-Omri.png"/>
+    <p>
+      There are numerous types of volcanoes such as: shield, cinder cone, lava dome, and composite. Shield volcanoes are like what you would see in Hawaii where there is gentle slope is created due to fast moving lava. Cinder cone volcanoes have a steep
+      slope because the lava erupts into the air in a short distance from the top of the volcano. Lava dome volcanoes are frequently created after an explosive eruption when lava continues to flow out afterwards. Composite volcanoes are the volcanoes you
+      typically think about where they explode violently; Mt. St. Helens was one of these volcanoes.</p>
+  </div>
+  <div class="button-container" id="quiz">
+    <a onclick="volcanoQuiz = new Quiz('#volcanoQuiz', '../javascripts/quizzes/volcanic.json');" class="button quizLoader">Open Quiz</a>
+  </div>
+  <div id="volcanoQuiz" class="quizContainer"></div>
+  <hr/>
+  <h2>Sources</h2>
+  <ul class="source-list">
+    <li>
+      <a href="http://beyondpenguins.ehe.osu.edu/issue/earths-changing-surface/the-forces-that-change-the-face-of-earth">
+        beyondpenguins.ehe.osu.edu
+      </a>
+    </li>
+    <li>
+      <a href="http://www.indiana.edu/~geol105/images/gaia_chapter_5/volcanic_processes.htm">
+        www.indiana.edu
+      </a>
+    </li>
+    <li>
+      <a href="http://volcano.oregonstate.edu/lava-tubes">
+        volcano.oregonstate.edu
+      </a>
+    </li>
+  </ul>
+
+</div>
+<footer>
+  <p>Created and Designed by Aidan Feay, Brandon Groff, and Lucas Smith</p>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "title": "Sample Quiz",
+  "questions": [
+    {
+      "question_name": "What is the capital of Indiana?",
+      "answers": [
+        "Kokomo",
+        "Gary",
+        "Muncie",
+        "Indianapolis"
+      ],
+      "correct_answer": "Indianapolis"
+    },
+    {
+      "question_name": "Which Great Lake neighbors Indiana?",
+      "answers": [
+        "Superior",
+        "Michigan",
+        "Huron",
+        "Ontario"
+      ],
+      "correct_answer": "Michigan"
+    }
+  ]
+}
